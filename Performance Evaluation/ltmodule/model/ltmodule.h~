@@ -1,0 +1,32 @@
+/*
+ * ltallinone.h
+ *
+ *  Created on: Nov 22, 2013
+ *      Author: bao
+ */
+
+#ifndef LTALLINONE_H_
+#define LTALLINONE_H_
+
+#include <ns3/spectrum-value.h>
+#include <ns3/spectrum-converter.h>
+#include <ns3/spectrum-channel.h>
+#include <ns3/spectrum-propagation-loss-model.h>
+#include <ns3/propagation-delay-model.h>
+#include <map>
+#include <set>
+#include <time.h>
+#include <math.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+namespace ns3 {
+void LT_Encode(char* buf_send,char* buf,uint32_t dwFileSize,uint32_t LTSendSize,uint32_t Block_index);
+void LT_Encode_Num(char* buf_send,char* buf,uint32_t dwFileSize,uint32_t LTSendSize,uint32_t Block_index,uint32_t nPacks);
+bool LT_Decode(char* buf,char* buf_Receive,uint32_t m_dwFileSize,uint32_t m_LTSendSize);
+}
+
+
+#endif /* LTALLINONE_H_ */

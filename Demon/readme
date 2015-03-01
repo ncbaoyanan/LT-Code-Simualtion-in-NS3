@@ -1,0 +1,14 @@
+The package includes the LT code module and test example.
+
+file list:
+
+/ltmodlue/  It is the module that includes encode and decode function. You should put it in /src/. For example, in my computer it's /home/bao/workspace/ns-3-allinone/ns-3.18/src/.
+/Freshman2Davis240p.3gp It is a test source file. You should put it just above the /scrach. For example, in my computer it is /home/bao/workspace/ns-3-allinone/ns-3.18/.
+/LTcodeUDPServerandClient.cc It is a file transfer demo using UDP plus LT code. You should put it into your scratch folder. For example, in my computer it's /home/bao/workspace/ns-3-allinone/ns-3.18/scratch/.
+/FileTransferTCP.cc It tranfer the same file using TCP. The window size is recorded. You should put it into your scratch folder. 
+
+
+Note, the LTcodeUDPServerandClient will try to decode the data several times before success as the received data increases.
+
+\Enjoy our project!
+
